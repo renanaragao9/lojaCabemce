@@ -1,0 +1,133 @@
+.nav-principal {
+    height: 100px;
+    background-color: #D9D9D9;
+}
+
+#nav-logo {
+    max-width: 100%; 
+    height: auto;
+    margin: 10px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    object-fit: cover;
+}
+
+#nav-titulo {
+    text-align: center;
+    font-size: 24px; 
+    font-weight: bold;
+    color: #333; 
+    margin: 15px;
+}
+
+#nav-list a{
+    color: #333; 
+    margin: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.introducao {
+    height: 500px;
+    background-color: #D9D9D933;
+}
+
+#introducao-texto {
+    text-align: center; 
+    padding: 20px;
+    margin-left: -50px;
+}
+
+#introducao-texto-base {
+    font-size: 34px; 
+    margin: 10px 0;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 75px;
+}
+
+#introducao-texto-orgao {
+    font-size: 85px;
+    font-weight: bolder;
+    width: 75px;
+    margin: 10px 0;
+    color: #000;
+    margin-top: -15px;
+}
+
+#introducao-texto-status {
+    font-size: 28px; 
+    margin: 10px 0;
+    margin-top: -10px;
+    background: #99AABB; 
+    color: #000; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 240px;
+}
+
+#introducao-texto-paragrafo {
+    margin-top: -5px;
+    width: 230px;
+    margin-left: 4px;
+    color: #000;
+}
+
+#introducao-texto-botao {
+    margin: 10px 0;
+    margin-top: -10px;
+    margin-left: 50px;
+    background: #A1A4AA; 
+    color: #000; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background 0.3s ease; 
+    font-weight: bold;
+}
+
+#introducao-texto-botao:hover {
+    background: #8C8D8E; /* Cor do botão ao passar o mouse */
+}
+
+#introducao-imagem {
+    height: 280px;
+    width: 120px;
+    margin-top: 20px;
+    margin-left: 80px;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+}
+
+@media only screen and (max-width: 600px) {
+    .introducao {
+        height: 800px;
+    }
+
+    #introducao-texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Ajusta a posição para o centro */
+        margin: 0;
+        margin-top: 120px;
+    }
+    
+    #introducao-texto-botao {
+        margin-left: 0px;
+    }
+
+    #introducao-imagem {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+   
+}

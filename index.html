@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Cabemce</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/auxiliares/carousel.css">
+</head>
+<body>
+    <nav class="nav-principal">
+        <div class="nav-wrapper">
+            <img src="img/logo.png" id="nav-logo" alt="">
+            
+            <a href="#" class="brand-logo" id="nav-titulo">Loja Cabemce</a>
+            
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li id="nav-list"><a href="#">Produtos</a></li>
+                <li id="nav-list"><a href="#">Atendimento</a></li>
+                <li id="nav-list"><a href="#">Carrinho</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="introducao">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m8">
+                    <div class="carousel-container">
+                        <div class="carousel">
+                            <div class="carousel-slides">
+                                <div class="carousel-slide"><img src="img/exe1.jpg" alt="Imagem 1"></div>
+                                <div class="carousel-slide"><img src="img/exe2.jpg" alt="Imagem 2"></div>
+                                <div class="carousel-slide"><img src="img/exe3.jpg" alt="Imagem 3"></div>
+                            </div>
+                            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+                            <a class="next" onclick="moveSlide(1)">&#10095;</a>
+                        </div>
+                        
+                        <div class="carousel-indicators">
+                            <span class="indicator" onclick="currentSlide(1)"></span>
+                            <span class="indicator" onclick="currentSlide(2)"></span>
+                            <span class="indicator" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col s12 m2">
+                    <div id="introducao-texto">
+                        <h1 id="introducao-texto-base">Fardamento</h1>
+                        <h1 id="introducao-texto-orgao">PMCE</h1>
+                        <h1 id="introducao-texto-status">Disponível</h1>
+                        <p  id="introducao-texto-paragrafo">Contate-nos agora e encomende seu novo fardamento</p>
+                        <button id="introducao-texto-botao">Encomendar agora</button>
+                    </div>
+                </div>
+
+                <div class="col s12 m2">
+                    <img src="/img/Novo-fardamento-PMCE 1.png" id="introducao-imagem" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
