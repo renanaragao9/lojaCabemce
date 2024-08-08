@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/auxiliares/carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
     <section>
@@ -57,28 +59,24 @@
                             <button id="introducao-texto-botao">Encomendar agora</button>
                         </div>
                     </div>
-    
-                    <div class="col s12 m2">
-                        <img src="/img/Novo-fardamento-PMCE 1.png" id="introducao-imagem" alt="">
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <ul id="slide-out" class="sidenav">
-        <li>
+        <li id="perfil-info">
             <div class="user-view">
                 <div class="background">
-                    <img src="images/office.jpg">
+                    <img src="images/office.jpg" alt="Capa de fundo menu lateral">
                 </div>
                 <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                <a href="#name"><span class="black-text name">Renan Aragão</span></a>
+                <a href="#email"><span class="black-text email">renanaragao159@gmail.com</span></a>
             </div>
         </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>Meus Produtos</a></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>Meu Perfil</a></li>
         <li><div class="divider"></div></li>
         <li><a class="subheader">Filtros</a></li>
         <li>
@@ -87,30 +85,44 @@
                 <h6>Atalhos</h6>
                 <div class="filter-atalhos">
                     <a href="#" id="filter-link">
-                        <div id="filter-card">
+                        <div class="grey lighten-4" id="filter-card">
                             <i class="material-icons">watch</i>
                             <span>Relogios</span>
                         </div>
                     </a>
 
                     <a href="#" id="filter-link">
-                        <div id="filter-card">
+                        <div class="grey lighten-4" id="filter-card">
                             <i class="material-icons">military_tech</i>
                             <span>Boinas</span>
                         </div>
                     </a>
 
                     <a href="#" id="filter-link">
-                        <div id="filter-card">
-                            <i class="material-icons">snowshoeing</i>
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fa-solid fa-person-military-rifle"></i>
+                            <span>Fardamentos</span>
+                        </div>
+                    </a>
+
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fas fa-shoe-prints"></i>
                             <span>Tênis</span>
                         </div>
                     </a>
 
                     <a href="#" id="filter-link">
-                        <div id="filter-card">
-                            <i class="material-icons">snowshoeing</i>
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fa-solid fa-shirt"></i>
                             <span>Camisetas</span>
+                        </div>
+                    </a>
+
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fas fa-female"></i>
+                            <span>Vestidos</span>
                         </div>
                     </a>
                 </div>
@@ -305,7 +317,7 @@
             </div>
         </li>
     </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> 
 
     <div class="container-flex">
         <aside id="menu-filtros" class="anside-desktop">
@@ -316,30 +328,44 @@
                 <h6>Atalhos</h6>
                 <div class="filter-atalhos">
                     <a href="#" id="filter-link">
-                        <div id="filter-card">
+                        <div class="grey lighten-4" id="filter-card">
                             <i class="material-icons">watch</i>
                             <span>Relogios</span>
                         </div>
                     </a>
 
                     <a href="#" id="filter-link">
-                        <div id="filter-card">
+                        <div class="grey lighten-4" id="filter-card">
                             <i class="material-icons">military_tech</i>
                             <span>Boinas</span>
                         </div>
                     </a>
 
                     <a href="#" id="filter-link">
-                        <div id="filter-card">
-                            <i class="material-icons">snowshoeing</i>
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fa-solid fa-person-military-rifle"></i>
+                            <span>Fardamentos</span>
+                        </div>
+                    </a>
+
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fas fa-shoe-prints"></i>
                             <span>Tênis</span>
                         </div>
                     </a>
 
                     <a href="#" id="filter-link">
-                        <div id="filter-card">
-                            <i class="material-icons">snowshoeing</i>
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fa-solid fa-shirt"></i>
                             <span>Camisetas</span>
+                        </div>
+                    </a>
+
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fas fa-female"></i>
+                            <span>Vestidos</span>
                         </div>
                     </a>
                 </div>
@@ -533,12 +559,13 @@
         <section id="card-section">
             <div class="row">
                 <div>
-                    <h1 id="Index-Titulo">Novidades em Loja</h1>
+                    <h1 id="index-titulo">Novidades em Loja</h1>
                 </div>
 
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="card">
+                <div class="row" id="card-row">
+                    <!-- Seção Tenis -->
+                    <div class="col s12 m6 l4">
+                        <div class="card" id="tenis">
                             <div class="card-image">
                                 <img src="img/tenis-nike.jpeg" id="card-imagem">
                                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
@@ -547,105 +574,177 @@
                             <div class="card-content" id="card-info">
                                 
                                 <h1 id="card-title">
-                                    Tênis Dior Nike Air Force
-                                    <div id="card-bolinha"></div>
+                                    <span class="col s12">Tênis Dior Nike Air Force</span>
+                                    <div  id="card-bolinha" style="background: linear-gradient(to right, #c7c8b8 49%, #959684 50%);"></div>
                                 </h1>
 
-                                <div id="card-preco">
-                                    <p id="card-preco-total">R$ 150,00</p>
-                                    <p id="card-preco-parcela">(Em até 3x de R$ 50,00)</p>
+                                <div class="col s12 m12 l7" id="card-preco">
+                                    <p id="card-preco-total">R$ 250,00</p>
+                                    <p id="card-preco-parcela">(Em até 5x de R$ 50,00)</p>
                                 </div>
 
-                                <div id="card-tipo">
-                                    <span>Unisex</span>
+                                <div  id="card-itens">
+                                    <span>Masculino</span>
                                 </div>
 
-                                <div id="card-promocao">
+                                <div   id="card-itens">
                                     <span>PROMOÇÃO</span>
                                 </div>
-                                
+
                                 <div id="card-desconto">
                                     <span>10% OFF</span>
                                 </div>
 
-                                <div id="card-compre-leve">
-                                    <span>Compre 1 e Leve 2</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="img/tenis-nike.jpeg" id="card-imagem">
-                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
-                            </div>
-                            
-                            <div class="card-content" id="card-info">
-                                
-                                <h1 id="card-title">
-                                    Tênis Dior Nike Air Force
-                                    <div id="card-bolinha"></div>
-                                </h1>
-
-                                <div id="card-preco">
-                                    <p id="card-preco-total">R$ 150,00</p>
-                                    <p id="card-preco-parcela">(Em até 3x de R$ 50,00)</p>
-                                </div>
-
-                                <div id="card-tipo">
-                                    <span>Unisex</span>
-                                </div>
-
-                                <div id="card-promocao">
-                                    <span>PROMOÇÃO</span>
-                                </div>
-                                
-                                <div id="card-desconto">
-                                    <span>10% OFF</span>
-                                </div>
-
-                                <div id="card-compre-leve">
-                                    <span>Compre 1 e Leve 2</span>
+                                <div  id="card-itens">
+                                    <span>ESportivo</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col s12 m6 l4">
-                        <div class="card">
+                        <div class="card" id="tenis">
                             <div class="card-image">
-                                <img src="img/tenis-nike.jpeg" id="card-imagem">
+                                <img src="img/tenis-acics.jpeg" id="card-imagem">
                                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
                             </div>
                             
                             <div class="card-content" id="card-info">
                                 
                                 <h1 id="card-title">
-                                    Tênis Dior Nike Air Force
-                                    <div id="card-bolinha"></div>
+                                    <span class="col s12">Tênis Asics Fuzeblast SE</span>
+                                    <div id="card-bolinha" style="background: linear-gradient(to right, #2c3a5f 49%, #fff 50%);"></div>
                                 </h1>
 
-                                <div id="card-preco">
+                                <div class="col s12 m12 l7" id="card-preco">
+                                    <p id="card-preco-total">R$ 399,99</p>
+                                    <p id="card-preco-parcela">(Em até 4x de R$ 99,99)</p>
+                                </div>
+
+                                <div id="card-itens">
+                                    <span>Masculino</span>
+                                </div>
+
+                                <div id="card-itens">
+                                    <span>Esportivo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="card" id="tenis">
+                            <div class="card-image">
+                                <img src="img/tenis-olimpus.jpg" id="card-imagem">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                            </div>
+                            
+                            <div class="card-content" id="card-info">
+                                
+                                <h1 id="card-title">
+                                    <span class="col s12">Tênis Olympikus Zomax</span>
+                                    <div id="card-bolinha" style="background: linear-gradient(to right, #45403d 49%, #fa4773 50%);"></div>
+                                </h1>
+
+                                <div class="col s12 m12 l7" id="card-preco">
                                     <p id="card-preco-total">R$ 150,00</p>
-                                    <p id="card-preco-parcela">(Em até 3x de R$ 50,00)</p>
+                                    <p id="card-preco-parcela">(Em até 2x de R$ 75,00)</p>
                                 </div>
 
-                                <div id="card-tipo">
-                                    <span>Unisex</span>
+                                <div id="card-itens">
+                                    <span>Feminino</span>
                                 </div>
 
-                                <div id="card-promocao">
+                                <div id="card-itens">
                                     <span>PROMOÇÃO</span>
                                 </div>
                                 
                                 <div id="card-desconto">
                                     <span>10% OFF</span>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
 
-                                <div id="card-compre-leve">
-                                    <span>Compre 1 e Leve 2</span>
+                    <!-- Seção Relogio -->
+                    <div class="col s12 m6 l4">
+                        <div class="card" id="card" id="relogio">
+                            <div class="card-image">
+                                <img src="img/relogio-militar.jpeg" id="card-imagem">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                            </div>
+                            
+                            <div class="card-content" id="card-info">
+                                
+                                <h1 id="card-title">
+                                    <span class="col s12">Relógio Militar Timeless Mud Resist</span>
+                                </h1>
+
+                                <div class="col s12 m12 l7" id="card-preco">
+                                    <p id="card-preco-total">R$ 370,00</p>
+                                    <p id="card-preco-parcela">(Em até 4x de R$ 92,50)</p>
+                                </div>
+
+                                <div id="card-itens">
+                                    <span>UNISEX</span>
+                                </div>
+
+                                <div id="card-itens">
+                                    <span>PROMOÇÃO</span>
+                                </div>
+                                
+                                <div id="card-desconto">
+                                    <span>10% OFF</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="card" id="card" id="relogio">
+                            <div class="card-image">
+                                <img src="img/relogio-esportivo.png" id="card-imagem">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                            </div>
+                            
+                            <div class="card-content" id="card-info">
+                                
+                                <h1 id="card-title">
+                                    <span class="col s12">Relógio G-SHOCK WR20BAR</span>
+                                </h1>
+
+                                <div class="col s12 m12 l7" id="card-preco">
+                                    <p id="card-preco-total">R$ 950,00</p>
+                                    <p id="card-preco-parcela">(Em até 10x de R$ 95,00)</p>
+                                </div>
+
+                                <div id="card-itens">
+                                    <span>UNISEX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="card" id="card" id="relogio">
+                            <div class="card-image">
+                                <img src="img/relogio-casual.jpg" id="card-imagem">
+                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">shopping_cart</i></a>
+                            </div>
+                            
+                            <div class="card-content" id="card-info">
+                                
+                                <h1 id="card-title">
+                                    <span class="col s12">Relógio Readeel WR30M</span>
+                                </h1>
+
+                                <div class="col s12 m12 l7" id="card-preco">
+                                    <p id="card-preco-total">R$ 450,00</p>
+                                    <p id="card-preco-parcela">(Em até 5x de R$ 90,00)</p>
+                                </div>
+
+                                <div id="card-itens">
+                                    <span>UNISEX</span>
                                 </div>
                             </div>
                         </div>
