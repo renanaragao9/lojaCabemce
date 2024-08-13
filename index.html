@@ -12,15 +12,39 @@
 
 </head>
 <body>
+    <!-- Botão flutuante Fixo-->
+    <div class="fixed-action-btn toolbar direction-top active" id="mobile-fixed-action">
+        <ul>
+            <li class="waves-effect waves-light"> <a href="index_mobile.html" id="mobile-cione-fixo"> <i class="fa-solid fa-user"></i> </a> </li>
+            <li class="waves-effect waves-light"> <a href="index_mobile.html" id="mobile-cione-fixo"> <i class="fa-solid fa-house"></i> </a> </li>
+            <li class="waves-effect waves-light"> <a href="index_mobile.html" id="mobile-cione-fixo"> <i class="fa-solid fa-box"></i> </a> </li>
+        </ul>
+    </div>
+
     <section>
         <nav class="nav-principal">
             <div class="nav-wrapper">
-                <img src="img/logo.png" id="nav-logo" alt="">   
-                <a href="#" class="brand-logo" id="nav-titulo">Loja Cabemce Shopping Tático</a>
+                
+                <!--Desktop-->
+                <img src="img/logo.png" id="nav-logo" alt="">
+
+                <!-- Mobile -->
+                <div id="logo-centro"><img src="img/logo.png" alt=""></div>   
+                
+                <a href="#" class="brand-logo" id="nav-titulo">Loja Cabemce</a>
+                
+                <!-- Mobile -->
+                <a href="#" data-target="slide-out" class="sidenav-trigger" id="menu-hamburgue"><i class="material-icons">menu</i></a>
+
+                <!-- Mobile -->
+                <a href="#" id="menu-out"><i class="material-icons">logout</i></a>
+                
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li id="nav-list"><a href="#">Produtos</a></li>
                     <li id="nav-list"><a href="#">Atendimento</a></li>
                     <li id="nav-list"><a href="#">Carrinho</a></li>
+                    <li id="nav-list">
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -64,19 +88,46 @@
 
     <ul id="slide-out" class="sidenav">
         <li id="perfil-info">
-            <div class="user-view">
+            <div class="user-view center">
                 <div class="background">
-                    <img src="images/office.jpg" alt="Capa de fundo menu lateral">
+                    <img src="img/capa.png" alt="Capa de fundo menu lateral">
                 </div>
-                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                
+                <div class="image-container">
+                    <a href="#user"><img class="circle" src="img/perfil.jpeg"></a>
+                </div>
+
                 <a href="#name"><span class="black-text name">Renan Aragão</span></a>
+                
                 <a href="#email"><span class="black-text email">renanaragao159@gmail.com</span></a>
             </div>
         </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>Meus Produtos</a></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>Meu Perfil</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Filtros</a></li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <li id="menu-itens">
+            <a href="#!">
+                <i class="fa-solid fa-box "></i>
+                Meus Produtos
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li id="menu-itens">
+            <a href="#!">
+                <i class="fa-solid fa-user"></i>
+                Meu Perfil
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="subheader">Filtros</a>
+        </li>
         <li>
             <!-- Filtro por atalho -->
             <div class="filter-group" id="filtro-atalho">
@@ -315,8 +366,6 @@
             </div>
         </li>
     </ul>
-    
-    <!--<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
 
     <div class="container-flex">
         <aside id="menu-filtros" class="anside-desktop">
@@ -1317,6 +1366,43 @@
             </div>
         </section>
     </div>
+
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 >Loja Cabemce</h5>
+                    <p>Cabemce: respeitando e cuidando das pessoas.</p>
+                    <img src="/img/logo.png" id="footer-logo" alt="Logo da Cabemce">
+                    <h5 >Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Conheça nossa loja</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Visite a cabemce</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Fale com um de nossos atendentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col l6 s12">
+                    <h5 >Nosso Endereço</h5>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d527.2611196374432!2d-38.538003774598764!3d-3.734731084030575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7493ad0d73cbf%3A0x6cda24e20c005031!2sLoja%20CABEMCE!5e0!3m2!1spt-BR!2sbr!4v1723509325662!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    </div>
+                    <p><i class="fa-solid fa-location-dot"></i> Endereço: Av. Domingos Olímpio, 1589B - Farias Brito, Fortaleza - CE, 60015-103</p>
+                    <p><i class="fa-solid fa-phone"></i> Telefone: (85) 99219-9295</p>
+                </div>
+
+                <img src="/img/cabemce_labs.png" id="footer-logo2" alt="Logo da Cabemce Labs">
+             </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container center">
+            © 2024 Copyright Cabemce Labs
+          </div>
+        </div>
+    </footer>
+          
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
