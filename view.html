@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Cabemce</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/view.css">
+    <link rel="stylesheet" href="css/auxiliares/carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <!-- Botão flutuante Fixo-->
+    <div class="fixed-action-btn toolbar direction-top active" id="mobile-fixed-action">
+        <ul>
+            <li class="waves-effect waves-light"> <a href="index_mobile.html" id="mobile-cione-fixo"> <i class="fa-solid fa-user"></i> </a> </li>
+            <li class="waves-effect waves-light"> <a href="index_mobile.html" id="mobile-cione-fixo"> <i class="fa-solid fa-house"></i> </a> </li>
+            <li class="waves-effect waves-light"> <a href="index_mobile.html" id="mobile-cione-fixo"> <i class="fa-solid fa-box"></i> </a> </li>
+        </ul>
+    </div>
+
+    <section>
+        <nav class="nav-principal">
+            <div class="nav-wrapper">
+                
+                <!--Desktop-->
+                <img src="img/logo.png" id="nav-logo" alt="">
+
+                <!-- Mobile -->
+                <div id="logo-centro"><img src="img/logo.png" alt=""></div>   
+                
+                <a href="#" class="brand-logo" id="nav-titulo">Loja Cabemce</a>
+                
+                <!-- Mobile -->
+                <a href="#" data-target="slide-out" class="sidenav-trigger" id="menu-hamburgue"><i class="material-icons">menu</i></a>
+
+                <!-- Mobile -->
+                <a href="#" id="menu-out"><i class="material-icons">logout</i></a>
+                
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li id="nav-list"><a href="#">Produtos</a></li>
+                    <li id="nav-list"><a href="#">Atendimento</a></li>
+                    <li id="nav-list"><a href="#">Carrinho</a></li>
+                    <li id="nav-list">
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </section>
+
+    <ul id="slide-out" class="sidenav">
+        <li id="perfil-info">
+            <div class="user-view center">
+                <div class="background">
+                    <img src="img/capa.png" alt="Capa de fundo menu lateral">
+                </div>
+                
+                <div class="image-container">
+                    <a href="#user"><img class="circle" src="img/perfil.jpeg"></a>
+                </div>
+
+                <a href="#name"><span class="black-text name">Renan Aragão</span></a>
+                
+                <a href="#email"><span class="black-text email">renanaragao159@gmail.com</span></a>
+            </div>
+        </li>
+
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <li id="menu-itens">
+            <a href="#!">
+                <i class="fa-solid fa-box "></i>
+                Meus Produtos
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li id="menu-itens">
+            <a href="#!">
+                <i class="fa-solid fa-user"></i>
+                Meu Perfil
+            </a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li>
+            <a class="subheader">Filtros</a>
+        </li>
+        <li>
+            <!-- Filtro por atalho -->
+            <div class="filter-group" id="filtro-atalho">
+                <h6>Atalhos</h6>
+                <div class="filter-atalhos">
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="material-icons">watch</i>
+                            <span>Relogios</span>
+                        </div>
+                    </a>
+
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="material-icons">military_tech</i>
+                            <span>Boinas</span>
+                        </div>
+                    </a>
+
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fa-solid fa-person-military-rifle"></i>
+                            <span>Fardamentos</span>
+                        </div>
+                    </a>
+
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fas fa-shoe-prints"></i>
+                            <span>Tênis</span>
+                        </div>
+                    </a>
+
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fa-solid fa-shirt"></i>
+                            <span>Camisetas</span>
+                        </div>
+                    </a>
+
+                    <a href="#" id="filter-link">
+                        <div class="grey lighten-4" id="filter-card">
+                            <i class="fas fa-female"></i>
+                            <span>Vestidos</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!-- Filtro por Tamanho -->
+            <div class="filter-group" id="filtro-tamanho">
+                <h6>Tamanho</h6>
+                <div class="filter-options">
+                    <p>
+                        <label>
+                            <input type="checkbox" id="tamanho-p" />
+                            <span>P</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="tamanho-m" />
+                            <span>M</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="tamanho-g" />
+                            <span>G</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="tamanho-gg" />
+                            <span>GG</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="tamanho-xg" />
+                            <span>XG</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!-- Filtro por Tipo -->
+            <div class="filter-group" id="filtro-tipo">
+                <h6>Tipo</h6>
+                <div class="filter-options">
+                    <p>
+                        <label>
+                            <input type="checkbox" id="tipo-masculino" />
+                            <span>Masculino</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="tipo-feminino" />
+                            <span>Feminino</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="tipo-unisex" />
+                            <span>Unisex</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!-- Filtro por Número -->
+            <div class="filter-group" id="filtro-numero">
+                <h6>Número</h6>
+                <div class="filter-options">
+                    <p>
+                        <label>
+                            <input type="checkbox" id="numero-30-31" />
+                            <span>30/31</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="numero-32-33" />
+                            <span>32/33</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="numero-34-35" />
+                            <span>34/35</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="numero-36-37" />
+                            <span>36/37</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="numero-38-39" />
+                            <span>38/39</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="numero-40-41" />
+                            <span>40/41</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="numero-42-43" />
+                            <span>42/43</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="numero-44-45" />
+                            <span>44/45</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="numero-46-47" />
+                            <span>46/47</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            <!-- Filtro por Promoção -->
+            <div class="filter-group" id="filtro-promocao">
+                <h6>Promoção</h6>
+                <div class="filter-options">
+                    <p>
+                        <label>
+                            <input type="checkbox" id="promocao-10" />
+                            <span>10% OFF</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="promocao-15" />
+                            <span>15% OFF</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="promocao-20" />
+                            <span>20% OFF</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="promocao-25" />
+                            <span>25% OFF</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="promocao-30" />
+                            <span>30% OFF</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="promocao-35" />
+                            <span>35% OFF</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="promocao-40" />
+                            <span>40% OFF</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="promocao-45" />
+                            <span>45% OFF</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="promocao-50" />
+                            <span>50% OFF</span>
+                        </label>
+                    </p>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="container">
+        <p id="tumb-link">
+            <a href="#">Loja Cabeceira</a> &gt;
+            <a href="#">Insígnias</a> &gt;
+            Insígnias Militares
+        </p>
+        <div id="product-view" class="row">
+            <!-- Coluna das fotos do produto -->
+            <div class="col s12 m6">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="carousel-container">
+                            <div class="carousel-wrapper col s12 m10 l8">
+                                <div class="carousel carousel-slider center" id="product-carousel">
+                                    <div class="carousel-item" href="#one!">
+                                        <img src="img/insig-1.png">
+                                    </div>
+                                    
+                                    <div class="carousel-item" href="#two!">
+                                        <img src="img/insig-2.png">
+                                    </div>
+                                    
+                                    <div class="carousel-item" href="#three!">
+                                        <img src="img/insig3.png">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="thumbnail-wrapper col s12 m2 l4">
+                                <div class="thumbnail-container">
+                                    <button id="prev-thumbnail" class="carousel-control">
+                                        <i class="material-icons">chevron_left</i>
+                                    </button>
+                                    
+                                    <ul id="thumbnail-list">
+                                        <li><img src="img/insig-1.png" class="thumbnail"></li>
+                                        <li><img src="img/insig-2.png" class="thumbnail"></li>
+                                        <li><img src="img/insig3.png" class="thumbnail"></li>
+                                    </ul>
+                                    
+                                    <button id="next-thumbnail" class="carousel-control">
+                                        <i class="material-icons">chevron_right</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            
+            <!-- Coluna das informações complementares -->
+            <div id="product-details" class="col s12 m6">
+                <div id="product-title">Insígnias Militares </div>
+                
+                <div id="product-description">
+                    <p><i class="fa-solid fa-wallet"></i> 5 x de R$59,98 sem juros</p>
+                    <p><i class="fa-solid fa-money-bill"></i> Associados tem 5% de desconto</p>
+                    <p><i class="fa-solid fa-truck-fast"></i> Meios de envio somente para Fortaleza e região </p>
+                    <p><i class="fa-solid fa-location-dot"></i> Nossa loja: Av. Domingos Olímpio, 1589B - Farias Brito, Fortaleza - CE, 60015-103</p>
+                </div>
+
+                <div class="col m6 s12">
+                    <div class="custom-select-container">
+                        <label for="color-select">Cor</label>
+                        <select id="color-select">
+                            <option value="" disabled selected>Escolha uma cor</option>
+                            <option value="Padrão">Padrão</option>
+                        </select>
+                    </div>                    
+                </div>
+
+                <div class="col m3 s6">
+                    <div class="custom-select-container">
+                        <label for="color-select">Tamanho</label>
+                        <select id="color-select">
+                            <option value="" disabled selected>Escolha um tamanho</option>
+                            <option value="Padrão">Unico</option>
+                        </select>
+                    </div>                    
+                </div>
+
+                <div class="col m3 s6">
+                    <div class="custom-select-container">
+                        <label for="color-select">Quantidade</label>
+                        <select id="color-select">
+                            <option value="" disabled selected>Escolha uma quantidade</option>
+                            <option value="1">1</option>
+                        </select>
+                    </div>                    
+                </div>
+
+                <div class="col s12">
+                    <a class="btn-large waves-effect waves-light black" href="#">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12">
+            <p>Descrição detalhada do produto. Informações sobre características, benefícios e especificações técnicas.</p>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 >Loja Cabemce</h5>
+                    <p>Cabemce: respeitando e cuidando das pessoas.</p>
+                    <img src="/img/logo.png" id="footer-logo" alt="Logo da Cabemce">
+                    <h5 >Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Conheça nossa loja</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Visite a cabemce</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Fale com um de nossos atendentes</a></li>
+                    </ul>
+                </div>
+
+                <div class="col l6 s12">
+                    <h5 >Nosso Endereço</h5>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d527.2611196374432!2d-38.538003774598764!3d-3.734731084030575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c7493ad0d73cbf%3A0x6cda24e20c005031!2sLoja%20CABEMCE!5e0!3m2!1spt-BR!2sbr!4v1723509325662!5m2!1spt-BR!2sbr" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    
+                    </div>
+                    <p><i class="fa-solid fa-location-dot"></i> Endereço: Av. Domingos Olímpio, 1589B - Farias Brito, Fortaleza - CE, 60015-103</p>
+                    <p><i class="fa-solid fa-phone"></i> Telefone: (85) 99219-9295</p>
+                </div>
+
+                <img src="/img/cabemce_labs.png" id="footer-logo2" alt="Logo da Cabemce Labs">
+             </div>
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container center">
+            © 2024 Copyright Cabemce Labs
+          </div>
+        </div>
+    </footer>
+          
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('select').formSelect();
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const carouselElem = document.querySelector('#product-carousel');
+        const carouselInstance = M.Carousel.init(carouselElem, {
+            fullWidth: true,
+            indicators: false,
+            duration: 200,
+            interval: 2000
+        });
+
+        const thumbnails = Array.from(document.querySelectorAll('.thumbnail'));
+        const thumbnailList = document.querySelector('#thumbnail-list');
+        const prevButton = document.querySelector('#prev-thumbnail');
+        const nextButton = document.querySelector('#next-thumbnail');
+
+        let currentIndex = 0;
+
+        function updateThumbnails() {
+            // Atualiza as miniaturas com a imagem ativa no carousel
+            thumbnailList.querySelectorAll('li').forEach((item, index) => {
+            item.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        function showImage(index) {
+            // Atualiza o carousel para mostrar a imagem no índice especificado
+            carouselInstance.set(index);
+            updateThumbnails();
+        }
+
+        prevButton.addEventListener('click', function() {
+            if (currentIndex > 0) {
+            currentIndex--;
+            } else {
+            currentIndex = thumbnails.length - 1; // Loop para o final
+            }
+            showImage(currentIndex);
+        });
+
+        nextButton.addEventListener('click', function() {
+            if (currentIndex < thumbnails.length - 1) {
+            currentIndex++;
+            } else {
+            currentIndex = 0; // Loop para o início
+            }
+            showImage(currentIndex);
+        });
+
+        // Inicializa as miniaturas
+        updateThumbnails();
+
+        // Adiciona evento de clique nas miniaturas
+        thumbnails.forEach((thumbnail, index) => {
+            thumbnail.addEventListener('click', () => {
+            currentIndex = index;
+            showImage(currentIndex);
+            });
+        });
+    });
+</script>
+</body>
+</html>
